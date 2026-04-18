@@ -78,11 +78,13 @@ export default function Projects() {
         onClose={() => setActive(null)}
         maxWidth="md"
         fullWidth
-        PaperProps={{
-          sx: {
-            background: "transparent",
-            boxShadow: "none",
-            overflow: "visible",
+        slotProps={{
+          paper: {
+            sx: {
+              background: "transparent",
+              boxShadow: "none",
+              overflow: "visible",
+            },
           },
         }}
       >
