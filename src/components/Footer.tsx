@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { FiArrowUp } from "react-icons/fi";
+import { FiGithub, FiLinkedin, FiMail, FiArrowUp } from "react-icons/fi";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function Footer() {
@@ -13,13 +13,37 @@ export default function Footer() {
   return (
     <>
       <footer className="relative border-t border-[var(--glass-border)] mt-20">
-        <div className="mx-auto max-w-7xl px-4 py-8 flex items-center justify-center">
-          <p className="text-sm text-muted-foreground text-center">
+        <div className="mx-auto max-w-7xl px-4 py-10 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <p className="text-sm text-muted-foreground">
             Made with <span className="text-red-500">❤</span> by{" "}
             <span className="gradient-text font-semibold">Vaibhav Sathe</span>
             <span className="mx-2 opacity-50">|</span>
             © 2025 All Rights Reserved
           </p>
+          <div className="flex items-center gap-3 text-muted-foreground">
+            <a
+              href="https://github.com/"
+              target="_blank"
+              rel="noreferrer"
+              className="w-9 h-9 grid place-items-center rounded-lg glass hover:text-foreground transition"
+            >
+              <FiGithub size={16} />
+            </a>
+            <a
+              href="https://linkedin.com/"
+              target="_blank"
+              rel="noreferrer"
+              className="w-9 h-9 grid place-items-center rounded-lg glass hover:text-foreground transition"
+            >
+              <FiLinkedin size={16} />
+            </a>
+            <a
+              href="mailto:vaibhav@example.com"
+              className="w-9 h-9 grid place-items-center rounded-lg glass hover:text-foreground transition"
+            >
+              <FiMail size={16} />
+            </a>
+          </div>
         </div>
       </footer>
 
