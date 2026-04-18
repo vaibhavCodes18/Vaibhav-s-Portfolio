@@ -95,16 +95,16 @@ export default function Projects() {
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.95 }}
-                className="glass rounded-2xl p-8 relative glow-ring"
+                className="rounded-2xl p-8 relative glow-ring bg-card text-card-foreground border border-[var(--glass-border)]"
               >
                 <button
                   onClick={() => setActive(null)}
-                  className="absolute top-4 right-4 w-9 h-9 grid place-items-center rounded-lg hover:bg-[var(--muted)] transition"
+                  className="absolute top-4 right-4 w-9 h-9 grid place-items-center rounded-lg text-foreground hover:bg-[var(--muted)] transition"
                 >
                   <FiX size={18} />
                 </button>
                 <span className="text-xs font-mono text-[var(--brand)]">{project.tag}</span>
-                <h3 className="font-display text-2xl sm:text-3xl font-bold mt-1">
+                <h3 className="font-display text-2xl sm:text-3xl font-bold mt-1 text-foreground">
                   {project.title}
                 </h3>
                 <p className="mt-4 text-muted-foreground leading-relaxed">{project.details}</p>
