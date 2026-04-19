@@ -171,7 +171,7 @@ export default function Hero() {
   name: "Vaibhav Sathe",
   role: "Full Stack Developer",
   stack: {
-    backend:  ["Java", "Spring Boot", "JPA","Hibernate", "MERN"],
+    backend:  ["Java", "Spring Boot", "JPA", "MERN"],
     frontend: ["React", "Tailwind", "JS"],
     database: ["MySQL", "MongoDB"],
   },
