@@ -11,23 +11,6 @@ import Projects from "../sections/Projects";
 import Contact from "../sections/Contact";
 
 export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "Vaibhav Sathe — MERN & Java Full Stack Developer" },
-      {
-        name: "description",
-        content:
-          "Portfolio of Vaibhav Sathe — MERN & Java Full Stack Developer specializing in Spring Boot, React.js and scalable backend systems.",
-      },
-      { property: "og:title", content: "Vaibhav Sathe — Full Stack Developer" },
-      {
-        property: "og:description",
-        content:
-          "Java, Spring Boot, React, Node.js. Building scalable systems with clean architecture.",
-      },
-      { name: "twitter:title", content: "Vaibhav Sathe — Full Stack Developer" },
-    ],
-  }),
   component: Index,
 });
 
