@@ -15,14 +15,13 @@ export default function Footer() {
       <footer className="relative border-t border-[var(--glass-border)] mt-20">
         <div className="mx-auto max-w-7xl px-4 py-10 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground">
-            Made with <span className="text-red-500">❤</span> by{" "}
-            <span className="gradient-text font-semibold">Vaibhav Sathe</span>
-            <span className="mx-2 opacity-50">|</span>
-            © 2025 All Rights Reserved
+            © 2026 Designed & Developed <span className="text-red-500">❤</span> by{" "}
+            <span className="gradient-text font-semibold">Vaibhav Sathe.</span>
+
           </p>
           <div className="flex items-center gap-3 text-muted-foreground">
             <a
-              href="https://github.com/"
+              href="https://github.com/vaibhavCodes18/"
               target="_blank"
               rel="noreferrer"
               className="w-9 h-9 grid place-items-center rounded-lg glass hover:text-foreground transition"
@@ -30,7 +29,7 @@ export default function Footer() {
               <FiGithub size={16} />
             </a>
             <a
-              href="https://linkedin.com/"
+              href="https://www.linkedin.com/in/vaibhav-sathe89/"
               target="_blank"
               rel="noreferrer"
               className="w-9 h-9 grid place-items-center rounded-lg glass hover:text-foreground transition"
@@ -38,7 +37,7 @@ export default function Footer() {
               <FiLinkedin size={16} />
             </a>
             <a
-              href="mailto:vaibhav@example.com"
+              href="mailto:vaibhav.sathe.159@gmail.com"
               className="w-9 h-9 grid place-items-center rounded-lg glass hover:text-foreground transition"
             >
               <FiMail size={16} />

@@ -39,19 +39,19 @@ export default function About() {
             </p>
             <p>
               My toolbox spans <span className="text-foreground font-medium">Spring Boot, JPA/Hibernate,
-              MySQL & MongoDB</span> on the backend, and{" "}
+                MySQL & MongoDB</span> on the backend, and{" "}
               <span className="text-foreground font-medium">React, Tailwind & Node.js</span> on the
               frontend. I care deeply about clean architecture, security and developer experience.
             </p>
             <p>
               Whether it's a role-based platform, an AI-powered tool or a simple CRUD app, I aim to
               build software that's <span className="text-foreground font-medium">scalable, maintainable
-              and a joy to use</span>.
+                and a joy to use</span>.
             </p>
 
             <div className="pt-4">
               <a
-                href="/resume.pdf"
+                href="/resume/VaibhavResume.pdf"
                 download
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-xl gradient-bg text-white font-medium shadow-glow hover:scale-[1.02] transition-transform"
               >

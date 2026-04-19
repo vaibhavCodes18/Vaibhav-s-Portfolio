@@ -43,6 +43,15 @@ export const SKILLS = [
       { name: "JavaScript", level: 90 },
     ],
   },
+  {
+    category: "Database",
+    color: "from-[oklch(0.78_0.2_330)] to-[oklch(0.62_0.24_290)]",
+    items: [
+      { name: "MySQL", level: 90 },
+      { name: "MongoDB", level: 92 },
+      { name: "SQL", level: 90 },
+    ],
+  }
 ];
 
 export const PROJECTS = [
@@ -53,9 +62,9 @@ export const PROJECTS = [
       "Scalable backend built with Spring Boot exposing RESTful APIs for full employee CRUD operations.",
     details:
       "Designed RESTful APIs for employee CRUD operations using Spring Boot. Used JPA & Hibernate for ORM with MySQL integration. Followed clean layered architecture (Controller → Service → Repository) for maintainability and scalability.",
-    tech: ["Java", "Spring Boot", "JPA", "Hibernate", "MySQL", "REST"],
-    github: "https://github.com/",
-    demo: "",
+    tech: ["Java", "Spring Boot", "JPA", "Hibernate", "Spring Security", "JWT", "MySQL", "REST"],
+    github: "https://github.com/vaibhavCodes18/4bitLabs-Employee-Management-System-Backend",
+    demo: "https://4bitlabs-ems.vercel.app/",
   },
   {
     title: "Project Approval Management System",
@@ -65,7 +74,7 @@ export const PROJECTS = [
     details:
       "Implemented Spring Security with JWT-based access & refresh tokens. Role-based authorization (Student / Guide / HOD). MongoDB used for flexible schema. Secure, authorization-driven REST APIs.",
     tech: ["Java", "Spring Boot", "Spring Security", "JWT", "MongoDB"],
-    github: "https://github.com/",
+    github: "https://github.com/vaibhavCodes18/Project-Approval-System-Backend",
     demo: "",
   },
   {
@@ -76,7 +85,7 @@ export const PROJECTS = [
     details:
       "Node.js backend integrates with Google's Gemini API. React frontend offers an interactive prompt UI with streaming-style dynamic responses. Built end-to-end on the MERN stack.",
     tech: ["React", "Node.js", "Express", "MongoDB", "Gemini API"],
-    github: "https://github.com/",
+    github: "https://github.com/vaibhavCodes18/AI-Developer",
     demo: "",
   },
   {
@@ -86,8 +95,8 @@ export const PROJECTS = [
       "Track and categorize trip expenses with analytics and a clean, friendly UI.",
     details:
       "Full stack expense tracker with MySQL + ORM backend. Categorized expenses, summaries and analytics. Clean, user-friendly interface focused on usability.",
-    tech: ["React", "Spring Boot", "MySQL", "Tailwind"],
-    github: "https://github.com/",
+    tech: ["React", "Node.js", "Express", "MySQL", "Tailwind"],
+    github: "https://github.com/vaibhavCodes18/Trip-Expense-Tracker",
     demo: "",
   },
 ];
