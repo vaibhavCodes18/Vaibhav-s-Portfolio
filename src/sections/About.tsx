@@ -9,8 +9,8 @@ const HIGHLIGHTS = [
 
 export default function About() {
   return (
-    <section id="about" className="relative py-24">
-      <div className="mx-auto max-w-7xl px-4">
+    <section id="about" className="relative py-16 sm:py-24">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -19,18 +19,18 @@ export default function About() {
           className="max-w-2xl"
         >
           <span className="text-sm font-mono text-[var(--brand)]">// 01. about me</span>
-          <h2 className="mt-2 font-display text-4xl sm:text-5xl font-bold tracking-tight">
+          <h2 className="mt-2 font-display text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight">
             Building <span className="gradient-text">scalable</span> systems, end to end.
           </h2>
         </motion.div>
 
-        <div className="mt-12 grid lg:grid-cols-2 gap-10 items-start">
+        <div className="mt-10 sm:mt-12 grid lg:grid-cols-2 gap-8 lg:gap-10 items-start">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="space-y-5 text-lg text-muted-foreground leading-relaxed"
+            className="space-y-4 text-base sm:text-lg text-muted-foreground leading-relaxed"
           >
             <p>
               I'm a <span className="text-foreground font-medium">MERN & Java Full Stack Developer</span>{" "}
@@ -38,29 +38,32 @@ export default function About() {
               clean domains and shipping interfaces that feel effortless.
             </p>
             <p>
-              My toolbox spans <span className="text-foreground font-medium">Spring Boot, JPA/Hibernate,
-                MySQL & MongoDB</span> on the backend, and{" "}
+              My toolbox spans{" "}
+              <span className="text-foreground font-medium">
+                Spring Boot, JPA/Hibernate, MySQL & MongoDB
+              </span>{" "}
+              on the backend, and{" "}
               <span className="text-foreground font-medium">React, Tailwind & Node.js</span> on the
               frontend. I care deeply about clean architecture, security and developer experience.
             </p>
             <p>
               Whether it's a role-based platform, an AI-powered tool or a simple CRUD app, I aim to
-              build software that's <span className="text-foreground font-medium">scalable, maintainable
-                and a joy to use</span>.
+              build software that's{" "}
+              <span className="text-foreground font-medium">scalable, maintainable and a joy to use</span>.
             </p>
 
-            <div className="pt-4">
+            <div className="pt-2">
               <a
                 href="/resume/VaibhavResume.pdf"
                 download
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl gradient-bg text-white font-medium shadow-glow hover:scale-[1.02] transition-transform"
+                className="inline-flex items-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl gradient-bg text-white font-medium shadow-glow hover:scale-[1.02] transition-transform text-sm sm:text-base"
               >
                 <FiDownload /> Download Resume
               </a>
             </div>
           </motion.div>
 
-          <div className="grid sm:grid-cols-1 gap-4">
+          <div className="grid gap-4">
             {HIGHLIGHTS.map((h, i) => (
               <motion.div
                 key={h.title}
@@ -69,13 +72,13 @@ export default function About() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: i * 0.1 }}
                 whileHover={{ y: -4 }}
-                className="glass rounded-2xl p-6 flex gap-4 items-start glow-ring"
+                className="glass rounded-2xl p-4 sm:p-6 flex gap-3 sm:gap-4 items-start glow-ring"
               >
-                <div className="w-12 h-12 rounded-xl gradient-bg grid place-items-center text-white shrink-0 shadow-glow">
-                  <h.icon size={22} />
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl gradient-bg grid place-items-center text-white shrink-0 shadow-glow">
+                  <h.icon size={20} />
                 </div>
                 <div>
-                  <h3 className="font-display font-semibold text-lg">{h.title}</h3>
+                  <h3 className="font-display font-semibold text-base sm:text-lg">{h.title}</h3>
                   <p className="text-muted-foreground text-sm mt-1">{h.desc}</p>
                 </div>
               </motion.div>

@@ -33,13 +33,13 @@ export default function Contact() {
   }, [state.succeeded]);
 
   return (
-    <section id="contact" className="relative py-24">
+    <section id="contact" className="relative py-16 sm:py-24">
       <div className="absolute inset-0 -z-10">
-        <div className="absolute top-1/3 left-0 w-[400px] h-[400px] rounded-full bg-[var(--brand-2)]/15 blur-[120px]" />
-        <div className="absolute bottom-0 right-0 w-[400px] h-[400px] rounded-full bg-[var(--brand)]/15 blur-[120px]" />
+        <div className="absolute top-1/3 left-0 w-[250px] sm:w-[400px] h-[250px] sm:h-[400px] rounded-full bg-[var(--brand-2)]/15 blur-[100px] sm:blur-[120px]" />
+        <div className="absolute bottom-0 right-0 w-[250px] sm:w-[400px] h-[250px] sm:h-[400px] rounded-full bg-[var(--brand)]/15 blur-[100px] sm:blur-[120px]" />
       </div>
 
-      <div className="mx-auto max-w-7xl px-4">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -48,15 +48,15 @@ export default function Contact() {
           className="max-w-2xl"
         >
           <span className="text-sm font-mono text-[var(--brand)]">// 05. contact</span>
-          <h2 className="mt-2 font-display text-4xl sm:text-5xl font-bold tracking-tight">
+          <h2 className="mt-2 font-display text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight">
             Let's build <span className="gradient-text">something great</span>
           </h2>
-          <p className="mt-4 text-muted-foreground text-lg">
+          <p className="mt-3 sm:mt-4 text-muted-foreground text-base sm:text-lg">
             Have a project in mind, an opportunity, or just want to say hi? My inbox is open.
           </p>
         </motion.div>
 
-        <div className="mt-12 grid lg:grid-cols-5 gap-8">
+        <div className="mt-10 sm:mt-12 grid lg:grid-cols-5 gap-6 sm:gap-8">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -66,23 +66,23 @@ export default function Contact() {
           >
             <a
               href="mailto:vaibhav.sathe.159@gmail.com"
-              className="glass rounded-2xl p-5 flex items-center gap-4 hover:scale-[1.02] transition-transform glow-ring"
+              className="glass rounded-2xl p-4 sm:p-5 flex items-center gap-3 sm:gap-4 hover:scale-[1.02] transition-transform glow-ring"
             >
               <div className="w-12 h-12 rounded-xl gradient-bg grid place-items-center text-white shadow-glow">
                 <FiMail size={20} />
               </div>
-              <div>
-                <div className="text-xs text-muted-foreground">Email</div>
-                <div className="font-medium">vaibhav.sathe.159@gmail.com</div>
+              <div className="min-w-0">
+                  <div className="text-xs text-muted-foreground">Email</div>
+                  <div className="font-medium text-sm sm:text-base truncate">vaibhav.sathe.159@gmail.com</div>
               </div>
             </a>
             <a
-              href="https://github.com/"
+              href="https://github.com/vaibhavCodes18"
               target="_blank"
               rel="noreferrer"
-              className="glass rounded-2xl p-5 flex items-center gap-4 hover:scale-[1.02] transition-transform"
+              className="glass rounded-2xl p-4 sm:p-5 flex items-center gap-3 sm:gap-4 hover:scale-[1.02] transition-transform"
             >
-              <div className="w-12 h-12 rounded-xl bg-[var(--muted)] grid place-items-center">
+              <div className="w-12 h-12 rounded-xl bg-[var(--muted)] grid place-items-center shrink-0">
                 <FiGithub size={20} />
               </div>
               <div>
@@ -94,9 +94,9 @@ export default function Contact() {
               href="https://www.linkedin.com/in/vaibhav-sathe89/"
               target="_blank"
               rel="noreferrer"
-              className="glass rounded-2xl p-5 flex items-center gap-4 hover:scale-[1.02] transition-transform"
+              className="glass rounded-2xl p-4 sm:p-5 flex items-center gap-3 sm:gap-4 hover:scale-[1.02] transition-transform"
             >
-              <div className="w-12 h-12 rounded-xl bg-[var(--muted)] grid place-items-center">
+              <div className="w-12 h-12 rounded-xl bg-[var(--muted)] grid place-items-center shrink-0">
                 <FiLinkedin size={20} />
               </div>
               <div>

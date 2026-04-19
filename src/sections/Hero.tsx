@@ -41,8 +41,8 @@ export default function Hero() {
     const blobs = blobRef.current.querySelectorAll(".blob");
     blobs.forEach((b, i) => {
       gsap.to(b, {
-        x: `random(-80, 80)`,
-        y: `random(-60, 60)`,
+        x: `random(-60, 60)`,
+        y: `random(-40, 40)`,
         scale: `random(0.9, 1.2)`,
         duration: 6 + i * 1.5,
         repeat: -1,
@@ -56,12 +56,12 @@ export default function Hero() {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center pt-32 pb-20 overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center pt-28 pb-16 overflow-hidden">
       {/* Animated background */}
       <div ref={blobRef} className="absolute inset-0 -z-10 overflow-hidden">
-        <div className="blob absolute top-20 -left-20 w-[420px] h-[420px] rounded-full bg-[var(--brand)]/30 blur-[120px]" />
-        <div className="blob absolute top-40 right-0 w-[480px] h-[480px] rounded-full bg-[var(--brand-2)]/25 blur-[140px]" />
-        <div className="blob absolute bottom-0 left-1/3 w-[380px] h-[380px] rounded-full bg-[var(--brand-3)]/25 blur-[120px]" />
+        <div className="blob absolute top-20 -left-20 w-[280px] sm:w-[420px] h-[280px] sm:h-[420px] rounded-full bg-[var(--brand)]/30 blur-[100px] sm:blur-[120px]" />
+        <div className="blob absolute top-40 right-0 w-[300px] sm:w-[480px] h-[300px] sm:h-[480px] rounded-full bg-[var(--brand-2)]/25 blur-[110px] sm:blur-[140px]" />
+        <div className="blob absolute bottom-0 left-1/3 w-[250px] sm:w-[380px] h-[250px] sm:h-[380px] rounded-full bg-[var(--brand-3)]/25 blur-[100px] sm:blur-[120px]" />
         <div
           className="absolute inset-0 opacity-[0.04]"
           style={{
@@ -72,8 +72,9 @@ export default function Hero() {
         />
       </div>
 
-      <div className="mx-auto max-w-7xl px-4 grid lg:grid-cols-12 gap-12 items-center w-full">
-        <div className="lg:col-span-7">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-10 lg:gap-12 items-center w-full">
+        {/* Left — text content */}
+        <div className="lg:col-span-7 text-center lg:text-left">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -88,7 +89,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1 }}
-            className="font-display text-5xl sm:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-tight"
+            className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-tight"
           >
             Hi, I'm <span className="gradient-text">Vaibhav Sathe</span>
           </motion.h1>
@@ -97,7 +98,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.25 }}
-            className="mt-6 text-xl sm:text-2xl text-muted-foreground font-medium h-8"
+            className="mt-4 text-lg sm:text-xl md:text-2xl text-muted-foreground font-medium min-h-[2rem]"
           >
             <span className="typing-caret">{text}</span>
           </motion.div>
@@ -106,7 +107,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="mt-6 max-w-xl text-base sm:text-lg text-muted-foreground"
+            className="mt-4 max-w-xl mx-auto lg:mx-0 text-sm sm:text-base md:text-lg text-muted-foreground"
           >
             I craft scalable backend systems with Java & Spring Boot and ship beautiful, performant
             interfaces with React. Passionate about clean architecture, REST APIs and end-to-end
@@ -117,18 +118,18 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.55 }}
-            className="mt-8 flex flex-wrap items-center gap-3"
+            className="mt-8 flex flex-wrap items-center justify-center lg:justify-start gap-3"
           >
             <button
               onClick={() => scrollTo("projects")}
-              className="group inline-flex items-center gap-2 px-6 py-3 rounded-xl gradient-bg text-white font-medium shadow-glow hover:shadow-[0_0_80px_-10px_var(--brand)] transition-all"
+              className="group inline-flex items-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl gradient-bg text-white font-medium shadow-glow hover:shadow-[0_0_80px_-10px_var(--brand)] transition-all text-sm sm:text-base"
             >
               View Projects
               <FiArrowRight className="group-hover:translate-x-1 transition-transform" />
             </button>
             <button
               onClick={() => scrollTo("contact")}
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl glass font-medium hover:scale-[1.02] transition-transform"
+              className="inline-flex items-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl glass font-medium hover:scale-[1.02] transition-transform text-sm sm:text-base"
             >
               <FiMail /> Contact Me
             </button>
@@ -138,40 +139,40 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8 }}
-            className="mt-8 flex items-center gap-4 text-muted-foreground"
+            className="mt-6 flex items-center justify-center lg:justify-start gap-4 text-muted-foreground"
           >
-            <a href="https://github.com/" target="_blank" rel="noreferrer" className="hover:text-foreground transition-colors">
+            <a href="https://github.com/vaibhavCodes18" target="_blank" rel="noreferrer" className="hover:text-foreground transition-colors">
               <FiGithub size={20} />
             </a>
-            <a href="https://linkedin.com/" target="_blank" rel="noreferrer" className="hover:text-foreground transition-colors">
+            <a href="https://www.linkedin.com/in/vaibhav-sathe89/" target="_blank" rel="noreferrer" className="hover:text-foreground transition-colors">
               <FiLinkedin size={20} />
             </a>
             <span className="text-xs">— Let's connect</span>
           </motion.div>
         </div>
 
-        {/* Right card */}
+        {/* Right — code card */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.9, delay: 0.3 }}
           className="lg:col-span-5"
         >
-          <div className="relative animate-float">
-            <div className="absolute -inset-4 gradient-bg opacity-30 blur-2xl rounded-3xl" />
-            <div className="relative glass rounded-3xl p-6 glow-ring noise overflow-hidden">
+          <div className="relative animate-float max-w-md mx-auto lg:max-w-none">
+            <div className="absolute -inset-4 gradient-bg opacity-25 blur-2xl rounded-3xl" />
+            <div className="relative glass rounded-2xl sm:rounded-3xl p-4 sm:p-6 glow-ring noise overflow-hidden">
               <div className="flex items-center gap-2 mb-4">
-                <span className="w-3 h-3 rounded-full bg-red-400" />
-                <span className="w-3 h-3 rounded-full bg-yellow-400" />
-                <span className="w-3 h-3 rounded-full bg-green-400" />
+                <span className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-red-400" />
+                <span className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-yellow-400" />
+                <span className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-green-400" />
                 <span className="ml-2 text-xs text-muted-foreground font-mono">vaibhav.tsx</span>
               </div>
-              <pre className="text-[13px] leading-relaxed font-mono text-foreground/90 overflow-x-auto">
+              <pre className="text-[11px] sm:text-[13px] leading-relaxed font-mono text-foreground/90 overflow-x-auto whitespace-pre-wrap break-words sm:whitespace-pre">
                 {`const developer = {
   name: "Vaibhav Sathe",
   role: "Full Stack Developer",
   stack: {
-    backend:  ["Java", "Spring Boot", "JPA", "MERN"],
+    backend:  ["Java", "Spring Boot", "JPA"],
     frontend: ["React", "Tailwind", "JS"],
     database: ["MySQL", "MongoDB"],
   },
@@ -179,11 +180,11 @@ export default function Hero() {
   available: true,
 };`}
               </pre>
-              <div className="mt-5 flex flex-wrap gap-2">
+              <div className="mt-4 flex flex-wrap gap-1.5 sm:gap-2">
                 {["Java", "Spring Boot", "React", "Node.js", "MongoDB"].map((t) => (
                   <span
                     key={t}
-                    className="text-xs px-3 py-1 rounded-full border border-[var(--glass-border)] bg-[var(--background)]/40"
+                    className="text-[10px] sm:text-xs px-2 sm:px-3 py-0.5 sm:py-1 rounded-full border border-[var(--glass-border)] bg-[var(--background)]/40"
                   >
                     {t}
                   </span>
