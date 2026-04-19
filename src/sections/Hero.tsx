@@ -167,11 +167,11 @@ export default function Hero() {
                 <span className="ml-2 text-xs text-muted-foreground font-mono">vaibhav.tsx</span>
               </div>
               <pre className="text-[13px] leading-relaxed font-mono text-foreground/90 overflow-x-auto">
-{`const developer = {
+                {`const developer = {
   name: "Vaibhav Sathe",
   role: "Full Stack Developer",
   stack: {
-    backend:  ["Java", "Spring Boot", "JPA"],
+    backend:  ["Java", "Spring Boot", "JPA","Hibernate", "MERN"],
     frontend: ["React", "Tailwind", "JS"],
     database: ["MySQL", "MongoDB"],
   },
