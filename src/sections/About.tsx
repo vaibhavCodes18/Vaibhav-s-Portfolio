@@ -54,7 +54,7 @@ export default function About() {
 
             <div className="pt-2">
               <a
-                href="/resume/VaibhavResume.pdf"
+                href="/resume/JavaMern.pdf"
                 download
                 className="inline-flex items-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl gradient-bg text-white font-medium shadow-glow hover:scale-[1.02] transition-transform text-sm sm:text-base"
               >
