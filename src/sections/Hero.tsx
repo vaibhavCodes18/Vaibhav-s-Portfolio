@@ -178,17 +178,16 @@ export default function Hero() {
                 <span className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-red-400" />
                 <span className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-yellow-400" />
                 <span className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-green-400" />
-                <span className="ml-2 text-xs text-muted-foreground font-mono">vaibhav.tsx</span>
+                <span className="ml-2 text-xs text-muted-foreground font-mono">vaibhav.jsx</span>
               </div>
               <pre className="text-[11px] sm:text-[13px] leading-relaxed font-mono text-foreground/90 overflow-x-auto whitespace-pre-wrap break-words sm:whitespace-pre">
                 {`const developer = {
   name: "Vaibhav Sathe",
   role: "Full Stack Developer",
   stack: {
-    backend:  ["Java", "Spring Boot", "JPA"],
+    backend:  ["Spring Boot", "JPA", "Node.js"]
     frontend: ["React", "Tailwind", "JS"],
-    database: ["MySQL", "MongoDB", "PostgreSQL"],
-    ORM / ODM: ["Hibernate", "Prisma"]
+    database: ["MySQL", "MongoDB", "PostgreSQL"]
   },
   focus: "Scalable systems · Clean code",
   available: true,
