@@ -56,7 +56,10 @@ export default function Hero() {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center pt-28 pb-16 overflow-hidden">
+    <section
+      id="home"
+      className="relative min-h-screen flex items-center pt-28 pb-16 overflow-hidden"
+    >
       {/* Animated background */}
       <div ref={blobRef} className="absolute inset-0 -z-10 overflow-hidden">
         <div className="blob absolute top-20 -left-20 w-[280px] sm:w-[420px] h-[280px] sm:h-[420px] rounded-full bg-[var(--brand)]/30 blur-[100px] sm:blur-[120px]" />
@@ -141,10 +144,20 @@ export default function Hero() {
             transition={{ delay: 0.8 }}
             className="mt-6 flex items-center justify-center lg:justify-start gap-4 text-muted-foreground"
           >
-            <a href="https://github.com/vaibhavCodes18" target="_blank" rel="noreferrer" className="hover:text-foreground transition-colors">
+            <a
+              href="https://github.com/vaibhavCodes18"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-foreground transition-colors"
+            >
               <FiGithub size={20} />
             </a>
-            <a href="https://www.linkedin.com/in/vaibhav-sathe89/" target="_blank" rel="noreferrer" className="hover:text-foreground transition-colors">
+            <a
+              href="https://www.linkedin.com/in/vaibhav-sathe89/"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-foreground transition-colors"
+            >
               <FiLinkedin size={20} />
             </a>
             <span className="text-xs">— Let's connect</span>
@@ -174,7 +187,8 @@ export default function Hero() {
   stack: {
     backend:  ["Java", "Spring Boot", "JPA"],
     frontend: ["React", "Tailwind", "JS"],
-    database: ["MySQL", "MongoDB"],
+    database: ["MySQL", "MongoDB", "PostgreSQL"],
+    ORM / ODM: ["Hibernate", "Prisma"]
   },
   focus: "Scalable systems · Clean code",
   available: true,

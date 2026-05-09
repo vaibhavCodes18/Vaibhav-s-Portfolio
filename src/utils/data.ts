@@ -16,9 +16,7 @@ export const SKILLS = [
       { name: "Spring & Spring Boot", level: 90 },
       { name: "REST APIs", level: 93 },
       { name: "JPA & Hibernate", level: 85 },
-      { name: "MySQL", level: 88 },
-      { name: "MongoDB", level: 80 },
-      { name: "OAuth", level: 75 },
+      { name: "OAuth", level: 80 },
       { name: "Spring Security", level: 82 },
       { name: "JWT", level: 85 },
     ],
@@ -29,8 +27,8 @@ export const SKILLS = [
     items: [
       { name: "Node.js", level: 85 },
       { name: "Express.js", level: 84 },
-      { name: "React.js", level: 90 },
-      { name: "MongoDB", level: 80 },
+      { name: "Prisma", level: 94 },
+      { name: "Mongoose", level: 92 },
     ],
   },
   {
@@ -49,7 +47,7 @@ export const SKILLS = [
     items: [
       { name: "MySQL", level: 90 },
       { name: "MongoDB", level: 92 },
-      { name: "SQL", level: 90 },
+      { name: "PostgreSQL", level: 90 },
     ],
   }
 ];
@@ -72,7 +70,7 @@ export const PROJECTS = [
     description:
       "Role-based platform for Students, Guides and HOD with secure JWT authentication and refresh tokens.",
     details:
-      "Implemented Spring Security with JWT-based access & refresh tokens. Role-based authorization (Student / Guide / HOD). MongoDB used for flexible schema. Secure, authorization-driven REST APIs.",
+      "Implemented Spring Security with JWT-based access & refresh tokens. Role-based authorization (Student / Guide / HOD). MongoDB used for flexible schema. Secure, email verification(smtp), authorization-driven REST APIs.",
     tech: ["Java", "Spring Boot", "Spring Security", "JWT", "MongoDB"],
     github: "https://github.com/vaibhavCodes18/Project-Approval-System-Backend",
     demo: "",
