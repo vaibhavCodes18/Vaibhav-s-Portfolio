@@ -68,15 +68,14 @@ export const PROJECTS = [
     title: "AI Team Assistant Platform",
     tag: "Spring Boot + React.js + AI",
     description:
-      "Enterprise-grade AI-powered team collaboration platform with intelligent document processing, project management, task tracking, ticket management, and AI-driven API documentation.",
+      "An enterprise AI-driven collaboration platform featuring smart document processing, task tracking, and automated API documentation.",
     details:
-      "Designed and developed a full-stack collaboration platform using Spring Boot, React.js, PostgreSQL, Redis, Apache Kafka, and Google Gemini AI. Implemented JWT authentication, Google OAuth2 login, role-based access control (OWNER, ADMIN, MEMBER), multi-workspace architecture, project, task, ticket, and document management, AI-powered document summarization, AI API documentation generator, Redis caching, Kafka-based asynchronous document processing, activity logging, notifications, Docker containerization, RESTful APIs, pagination, filtering, transactions, and a clean layered architecture following enterprise software development best practices.",
+      "A full-stack collaboration system integrated with Google Gemini AI for document summarization and automated API documentation. Built with Spring Boot and React, it features a multi-workspace structure, OAuth2/JWT security, RBAC, and asynchronous processing with Kafka and Redis.",
     tech: [
       "Java",
       "Spring Boot",
       "Spring Security",
       "JWT",
-      "OAuth2",
       "React.js",
       "Redux Toolkit",
       "Tailwind CSS",
@@ -96,9 +95,9 @@ export const PROJECTS = [
     title: "Multi Tenant Project Management Platform",
     tag: "Node.js + Express.js + PostgreSQL",
     description:
-      "Scalable multi-tenant backend system for managing workspaces, projects, tasks, and teams with JWT authentication and role-based access control (RBAC).",
+      "A scalable multi-tenant workspace and project management API with secure JWT authentication and role-based authorization.",
     details:
-      "Developed a production-style backend using Node.js, Express.js, Prisma ORM, and PostgreSQL. Implemented JWT authentication, RBAC (OWNER, ADMIN, MEMBER, VIEWER), workspace-based multi-tenancy, RESTful APIs, soft deletes, notifications, audit logging, transactions, pagination, filtering, and modular service-based architecture following industry best practices.",
+      "A production-grade backend API built with Node.js, Express, Prisma, and PostgreSQL. It features secure workspace-based multi-tenancy, granular RBAC (Owner to Viewer), soft deletes, audit logging, and fully paginated REST endpoints.",
     tech: ["Node.js", "Express.js", "PostgreSQL", "Prisma", "JWT", "REST"],
     github: "https://github.com/vaibhavCodes18/Multi-Tenant-Project-Management-Platform",
     demo: "",
@@ -154,11 +153,11 @@ export const EXPERIENCE = [
     company: "Kapil IT Skill Hub",
     period: "July 2025 – March 2026",
     bullets: [
-      "Hands-on experience in Core Java, Spring Boot, REST APIs, JPA/Hibernate, MySQL and React.js.",
-      "Developed a role-based system using Spring Boot, React and MySQL with REST APIs and full CRUD.",
-      "Implemented clean layered architecture (Controller → Service → Repository).",
-      "Used Postman for API testing and Git/GitHub for version control.",
-      "Built scalable backend services integrated with responsive frontend UI.",
+      "Developed full-stack applications using Spring Boot and React, building secure RESTful APIs for role-based systems.",
+      "Designed scalable backend services using JPA, Hibernate, PostgreSQL, and MySQL with clean layered architecture and optimized database relationships.",
+      "Implemented authentication and authorization using Spring Security, JWT, and OAuth 2.0, along with email verification workflows.",
+      "Built and containerized 35+ REST APIs using Docker and Docker Compose, and worked with Redis caching, Kafka messaging, and AWS deployment fundamentals.",
+      
     ],
     tech: ["Java", "Spring Boot", "React", "MySQL"],
   },
