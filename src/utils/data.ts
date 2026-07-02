@@ -46,16 +46,16 @@ export const SKILLS = [
     color: "from-[oklch(0.78_0.2_330)] to-[oklch(0.62_0.24_290)]",
     items: [
       { name: "MySQL", level: 90 },
-      { name: "MongoDB", level: 92 },
+      { name: "MongoDB", level: 88 },
       { name: "PostgreSQL", level: 90 },
-      { name: "Redis", level: 89 },
+      { name: "Redis", level: 84 },
     ],
   },
   {
     category: "Cloud & DevOps",
     color: "from-[oklch(0.78_0.2_330)] to-[oklch(0.62_0.24_290)]",
     items: [
-      { name: "Linux", level: 90 },
+      { name: "Linux", level: 86 },
       { name: "Git & GitHub", level: 94 },
       { name: "Docker", level: 85 },
       { name: "AWS", level: 80 },
