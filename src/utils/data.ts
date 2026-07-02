@@ -70,7 +70,7 @@ export const PROJECTS = [
     description:
       "An enterprise AI-driven collaboration platform featuring smart document processing, task tracking, and automated API documentation.",
     details:
-      "A full-stack collaboration system integrated with Google Gemini AI for document summarization and automated API documentation. Built with Spring Boot and React, it features a multi-workspace structure, OAuth2/JWT security, RBAC, and asynchronous processing with Kafka and Redis.",
+      "A full-stack collaboration system integrated with Google Gemini AI for document summarization and automated API documentation. Built with Spring Boot and React, it features a multi-workspace structure, JWT security, RBAC, and asynchronous processing with Kafka and Redis.",
     tech: [
       "Java",
       "Spring Boot",
