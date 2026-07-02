@@ -159,6 +159,6 @@ export const EXPERIENCE = [
       "Built and containerized 35+ REST APIs using Docker and Docker Compose, and worked with Redis caching, Kafka messaging, and AWS deployment fundamentals.",
       
     ],
-    tech: ["Java", "Spring Boot", "React", "MySQL"],
+    tech: ["Java", "Spring Boot", "React", "MySQL", "Docker"],
   },
 ];
