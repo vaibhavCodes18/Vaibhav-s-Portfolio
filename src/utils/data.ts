@@ -48,11 +48,61 @@ export const SKILLS = [
       { name: "MySQL", level: 90 },
       { name: "MongoDB", level: 92 },
       { name: "PostgreSQL", level: 90 },
+      { name: "Redis", level: 89 },
     ],
-  }
+  },
+  {
+    category: "Cloud & DevOps",
+    color: "from-[oklch(0.78_0.2_330)] to-[oklch(0.62_0.24_290)]",
+    items: [
+      { name: "Linux", level: 90 },
+      { name: "Git & GitHub", level: 94 },
+      { name: "Docker", level: 85 },
+      { name: "AWS", level: 80 },
+    ],
+  },
 ];
 
 export const PROJECTS = [
+  {
+    title: "AI Team Assistant Platform",
+    tag: "Spring Boot + React.js + AI",
+    description:
+      "Enterprise-grade AI-powered team collaboration platform with intelligent document processing, project management, task tracking, ticket management, and AI-driven API documentation.",
+    details:
+      "Designed and developed a full-stack collaboration platform using Spring Boot, React.js, PostgreSQL, Redis, Apache Kafka, and Google Gemini AI. Implemented JWT authentication, Google OAuth2 login, role-based access control (OWNER, ADMIN, MEMBER), multi-workspace architecture, project, task, ticket, and document management, AI-powered document summarization, AI API documentation generator, Redis caching, Kafka-based asynchronous document processing, activity logging, notifications, Docker containerization, RESTful APIs, pagination, filtering, transactions, and a clean layered architecture following enterprise software development best practices.",
+    tech: [
+      "Java",
+      "Spring Boot",
+      "Spring Security",
+      "JWT",
+      "OAuth2",
+      "React.js",
+      "Redux Toolkit",
+      "Tailwind CSS",
+      "PostgreSQL",
+      "JPA",
+      "Hibernate",
+      "Redis",
+      "Apache Kafka",
+      "Google Gemini AI",
+      "Docker",
+      "REST API",
+    ],
+    github: "https://github.com/vaibhavCodes18/AI-Team-Assistant-Platform",
+    demo: "",
+  },
+  {
+    title: "Multi Tenant Project Management Platform",
+    tag: "Node.js + Express.js + PostgreSQL",
+    description:
+      "Scalable multi-tenant backend system for managing workspaces, projects, tasks, and teams with JWT authentication and role-based access control (RBAC).",
+    details:
+      "Developed a production-style backend using Node.js, Express.js, Prisma ORM, and PostgreSQL. Implemented JWT authentication, RBAC (OWNER, ADMIN, MEMBER, VIEWER), workspace-based multi-tenancy, RESTful APIs, soft deletes, notifications, audit logging, transactions, pagination, filtering, and modular service-based architecture following industry best practices.",
+    tech: ["Node.js", "Express.js", "PostgreSQL", "Prisma", "JWT", "REST"],
+    github: "https://github.com/vaibhavCodes18/Multi-Tenant-Project-Management-Platform",
+    demo: "",
+  },
   {
     title: "Employee Management System",
     tag: "Spring Boot",
@@ -62,7 +112,7 @@ export const PROJECTS = [
       "Designed RESTful APIs for employee CRUD operations using Spring Boot. Used JPA & Hibernate for ORM with MySQL integration. Followed clean layered architecture (Controller → Service → Repository) for maintainability and scalability.",
     tech: ["Java", "Spring Boot", "JPA", "Hibernate", "Spring Security", "JWT", "MySQL", "REST"],
     github: "https://github.com/vaibhavCodes18/4bitLabs-Employee-Management-System-Backend",
-    demo: "https://4bitlabs-ems.vercel.app/",
+    demo: "",
   },
   {
     title: "Project Approval Management System",
@@ -89,8 +139,7 @@ export const PROJECTS = [
   {
     title: "Trip Expense Tracker",
     tag: "Full Stack",
-    description:
-      "Track and categorize trip expenses with analytics and a clean, friendly UI.",
+    description: "Track and categorize trip expenses with analytics and a clean, friendly UI.",
     details:
       "Full stack expense tracker with MySQL + ORM backend. Categorized expenses, summaries and analytics. Clean, user-friendly interface focused on usability.",
     tech: ["React", "Node.js", "Express", "MySQL", "Tailwind"],
