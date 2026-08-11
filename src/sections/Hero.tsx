@@ -4,9 +4,9 @@ import gsap from "gsap";
 import { FiArrowRight, FiMail, FiGithub, FiLinkedin } from "react-icons/fi";
 
 const ROLES = [
+  "Sofware Engineer",
   "MERN & Java Full Stack Developer",
-  "Spring Boot Specialist",
-  "React.js Engineer",
+  "Backend Engineer",
   "Problem Solver",
 ];
 
@@ -185,9 +185,10 @@ export default function Hero() {
   name: "Vaibhav Sathe",
   role: "Full Stack Developer",
   stack: {
-    backend:  ["Spring Boot", "JPA", "Node.js"]
     frontend: ["React", "Tailwind", "JS"],
-    database: ["MySQL", "MongoDB", "PostgreSQL"]
+    backend:  ["Spring Boot", "Node.js", "Express.js"],
+    database: ["MySQL", "MongoDB", "PostgreSQL"],
+    cloud & devops: ["Linux", "Git", "Docker", "AWS"],
   },
   focus: "Scalable systems · Clean code",
   available: true,

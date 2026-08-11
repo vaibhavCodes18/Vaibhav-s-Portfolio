@@ -9,31 +9,18 @@ export const NAV_LINKS = [
 
 export const SKILLS = [
   {
-    category: "Backend (Java)",
-    color: "from-[oklch(0.62_0.24_290)] to-[oklch(0.7_0.2_200)]",
+    category: "Languages",
+    color: "from-indigo-600 to-violet-600",
     items: [
-      { name: "Core Java & OOP", level: 92 },
-      { name: "Spring & Spring Boot", level: 90 },
-      { name: "REST APIs", level: 93 },
-      { name: "JPA & Hibernate", level: 85 },
-      { name: "OAuth", level: 80 },
-      { name: "Spring Security", level: 82 },
-      { name: "JWT", level: 85 },
-    ],
-  },
-  {
-    category: "MERN Stack",
-    color: "from-[oklch(0.7_0.2_200)] to-[oklch(0.78_0.2_330)]",
-    items: [
-      { name: "Node.js", level: 85 },
-      { name: "Express.js", level: 84 },
-      { name: "Prisma", level: 94 },
-      { name: "Mongoose", level: 92 },
+      { name: "C/C++", level: 90 },
+      { name: "Java", level: 95 },
+      { name: "Python", level: 80 },
+      { name: "Dart", level: 85 },
     ],
   },
   {
     category: "Frontend",
-    color: "from-[oklch(0.78_0.2_330)] to-[oklch(0.62_0.24_290)]",
+    color: "from-indigo-500 to-purple-600",
     items: [
       { name: "React.js", level: 90 },
       { name: "Tailwind CSS", level: 92 },
@@ -42,8 +29,32 @@ export const SKILLS = [
     ],
   },
   {
+    category: "MERN Stack",
+    color: "from-violet-600 to-fuchsia-600",
+    items: [
+      { name: "Node.js", level: 85 },
+      { name: "Express.js", level: 84 },
+      { name: "Prisma", level: 94 },
+      { name: "Mongoose", level: 92 },
+    ],
+  },
+  {
+    category: "Backend (Java)",
+    color: "from-indigo-700 to-violet-700",
+    items: [
+      { name: "Core Java & OOP", level: 92 },
+      { name: "Spring & Spring Boot", level: 90 },
+      { name: "REST APIs", level: 93 },
+      { name: "JPA & Hibernate", level: 85 },
+      { name: "OAuth", level: 80 },
+      { name: "Websocket", level: 90 },
+      { name: "Spring Security", level: 82 },
+      { name: "JWT", level: 85 },
+    ],
+  },
+  {
     category: "Database",
-    color: "from-[oklch(0.78_0.2_330)] to-[oklch(0.62_0.24_290)]",
+    color: "from-purple-600 to-indigo-600",
     items: [
       { name: "MySQL", level: 90 },
       { name: "MongoDB", level: 88 },
@@ -53,7 +64,7 @@ export const SKILLS = [
   },
   {
     category: "Cloud & DevOps",
-    color: "from-[oklch(0.78_0.2_330)] to-[oklch(0.62_0.24_290)]",
+    color: "from-violet-700 to-indigo-600",
     items: [
       { name: "Linux", level: 86 },
       { name: "Git & GitHub", level: 94 },
@@ -65,17 +76,24 @@ export const SKILLS = [
 
 export const PROJECTS = [
   {
-    title: "AI Team Assistant Platform",
+    title: "TeamPilot - AI-Powered Team Collaboration Platform",
+
     tag: "Spring Boot + React.js + AI",
+
     description:
-      "An enterprise AI-driven collaboration platform featuring smart document processing, task tracking, and automated API documentation.",
+      "An enterprise-grade team collaboration platform for managing workspaces, projects, tickets, tasks, documents, and real-time team communication.",
+
     details:
-      "A full-stack collaboration system integrated with Google Gemini AI for document summarization and automated API documentation. Built with Spring Boot and React, it features a multi-workspace structure, JWT security, RBAC, and asynchronous processing with Kafka and Redis.",
+      "A full-stack collaboration platform built with Spring Boot and React.js, featuring multi-workspace project management, ticket and task tracking, role-based access control, JWT and OAuth 2.0 authentication, real-time chat using WebSocket and STOMP, AI-powered document summarization and API documentation generation with Google Gemini, and asynchronous event processing with Apache Kafka and Redis.",
+
     tech: [
       "Java",
       "Spring Boot",
       "Spring Security",
       "JWT",
+      "OAuth 2.0",
+      "WebSocket",
+      "STOMP",
       "React.js",
       "Redux Toolkit",
       "Tailwind CSS",
@@ -88,7 +106,9 @@ export const PROJECTS = [
       "Docker",
       "REST API",
     ],
-    github: "https://github.com/vaibhavCodes18/AI-Team-Assistant-Platform",
+
+    github: "https://github.com/vaibhavCodes18/TeamPilot-AI",
+
     demo: "",
   },
   {
@@ -153,12 +173,10 @@ export const EXPERIENCE = [
     company: "Kapil IT Skill Hub",
     period: "July 2025 – March 2026",
     bullets: [
-      "Developed full-stack applications using Spring Boot and React, building secure RESTful APIs for role-based systems.",
-      "Designed scalable backend services using JPA, Hibernate, PostgreSQL, and MySQL with clean layered architecture and optimized database relationships.",
-      "Implemented authentication and authorization using Spring Security, JWT, and OAuth 2.0, along with email verification workflows.",
-      "Built and containerized 35+ REST APIs using Docker and Docker Compose, and worked with Redis caching, Kafka messaging, and AWS deployment fundamentals.",
-      
+      "Developed full-stack applications using Spring Boot and React.js, building secure RESTful APIs with clean architecture and role-based authentication.",
+      "Implemented Spring Security, JWT, OAuth 2.0, Redis and WebSocket (STOMP) to build secure, scalable, and real-time applications.",
+      "Designed backend services using PostgreSQL, MongoDB, JPA, Hibernate, Docker, and Docker Compose, developing and testing 35+ REST APIs.",
     ],
-    tech: ["Java", "Spring Boot", "React", "MySQL", "Docker", "AWS"],
+    tech: ["Java", "Spring Boot", "React", "MySQL", "MongoDB", "Docker", "AWS"],
   },
 ];
