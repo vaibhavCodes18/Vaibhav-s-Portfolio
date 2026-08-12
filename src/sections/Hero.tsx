@@ -192,7 +192,7 @@ export default function Hero() {
                 {"  "}<span className="text-indigo-400">role</span>: <span className="text-emerald-400">"Full Stack Java & MERN Developer"</span>,{"\n"}
                 {"  "}<span className="text-indigo-400">stack</span>: &#123;{"\n"}
                 {"    "}<span className="text-indigo-300">backend</span>: [<span className="text-emerald-400">"Spring Boot"</span>, <span className="text-emerald-400">"Node.js"</span>, <span className="text-emerald-400">"Express"</span>],{"\n"}
-                {"    "}<span className="text-indigo-300">frontend</span>: [<span className="text-emerald-400">"React.js"</span>, <span className="text-emerald-400">"Tailwind"</span>, <span className="text-emerald-400">"TypeScript"</span>],{"\n"}
+                {"    "}<span className="text-indigo-300">frontend</span>: [<span className="text-emerald-400">"React.js"</span>, <span className="text-emerald-400">"Tailwind"</span>, <span className="text-emerald-400">"JavaScript"</span>],{"\n"}
                 {"    "}<span className="text-indigo-300">database</span>: [<span className="text-emerald-400">"PostgreSQL"</span>, <span className="text-emerald-400">"MongoDB"</span>, <span className="text-emerald-400">"MySQL"</span>],{"\n"}
                 {"    "}<span className="text-indigo-300">cloud & DevOps</span>: [<span className="text-emerald-400">"Git"</span>, <span className="text-emerald-400">"Docker"</span>, <span className="text-emerald-400">"Linux"</span>, <span className="text-emerald-400">"AWS"</span>],{"\n"}
                 {"  "}&#125;,{"\n"}
