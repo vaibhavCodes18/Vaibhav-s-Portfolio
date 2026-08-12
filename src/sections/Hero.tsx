@@ -173,32 +173,38 @@ export default function Hero() {
         >
           <div className="relative animate-float max-w-md mx-auto lg:max-w-none">
             <div className="absolute -inset-4 gradient-bg opacity-25 blur-2xl rounded-3xl" />
-            <div className="relative glass rounded-2xl sm:rounded-3xl p-4 sm:p-6 glow-ring noise overflow-hidden">
-              <div className="flex items-center gap-2 mb-4">
-                <span className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-red-400" />
-                <span className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-yellow-400" />
-                <span className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-green-400" />
-                <span className="ml-2 text-xs text-muted-foreground font-mono">vaibhav.jsx</span>
+            <div className="relative glass rounded-2xl sm:rounded-3xl p-4 sm:p-6 glow-ring noise overflow-hidden border border-white/10 dark:border-white/10 shadow-2xl">
+              <div className="flex items-center justify-between mb-4 pb-3 border-b border-[var(--glass-border)]">
+                <div className="flex items-center gap-2">
+                  <span className="w-3 h-3 rounded-full bg-rose-500/80 shadow-sm" />
+                  <span className="w-3 h-3 rounded-full bg-amber-500/80 shadow-sm" />
+                  <span className="w-3 h-3 rounded-full bg-emerald-500/80 shadow-sm" />
+                  <span className="ml-2 text-xs text-muted-foreground font-mono font-medium">developer.js</span>
+                </div>
+                <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-[var(--brand)]/15 text-[var(--brand)] font-semibold border border-[var(--brand)]/30">
+                  JavaScript
+                </span>
               </div>
-              <pre className="text-[11px] sm:text-[13px] leading-relaxed font-mono text-foreground/90 overflow-x-auto whitespace-pre-wrap break-words sm:whitespace-pre">
-                {`const developer = {
-  name: "Vaibhav Sathe",
-  role: "Full Stack Developer",
-  stack: {
-    frontend: ["React", "Tailwind", "JS"],
-    backend:  ["Spring Boot", "Node.js", "Express.js"],
-    database: ["MySQL", "MongoDB", "PostgreSQL"],
-    cloud & devops: ["Linux", "Git", "Docker", "AWS"],
-  },
-  focus: "Scalable systems · Clean code",
-  available: true,
-};`}
+              <pre className="text-[11px] sm:text-[13px] leading-relaxed font-mono overflow-x-auto whitespace-pre-wrap break-words sm:whitespace-pre">
+                <span className="text-purple-400 font-semibold">const</span>{" "}
+                <span className="text-cyan-400">developer</span> = &#123;{"\n"}
+                {"  "}<span className="text-indigo-400">name</span>: <span className="text-emerald-400">"Vaibhav Sathe"</span>,{"\n"}
+                {"  "}<span className="text-indigo-400">role</span>: <span className="text-emerald-400">"Full Stack Java & MERN Developer"</span>,{"\n"}
+                {"  "}<span className="text-indigo-400">stack</span>: &#123;{"\n"}
+                {"    "}<span className="text-indigo-300">backend</span>: [<span className="text-emerald-400">"Spring Boot"</span>, <span className="text-emerald-400">"Node.js"</span>, <span className="text-emerald-400">"Express"</span>],{"\n"}
+                {"    "}<span className="text-indigo-300">frontend</span>: [<span className="text-emerald-400">"React.js"</span>, <span className="text-emerald-400">"Tailwind"</span>, <span className="text-emerald-400">"TypeScript"</span>],{"\n"}
+                {"    "}<span className="text-indigo-300">database</span>: [<span className="text-emerald-400">"PostgreSQL"</span>, <span className="text-emerald-400">"MongoDB"</span>, <span className="text-emerald-400">"MySQL"</span>],{"\n"}
+                {"    "}<span className="text-indigo-300">cloud & DevOps</span>: [<span className="text-emerald-400">"Git"</span>, <span className="text-emerald-400">"Docker"</span>, <span className="text-emerald-400">"Linux"</span>, <span className="text-emerald-400">"AWS"</span>],{"\n"}
+                {"  "}&#125;,{"\n"}
+                {"  "}<span className="text-indigo-400">focus</span>: <span className="text-emerald-400">"Scalable APIs & Clean Architecture"</span>,{"\n"}
+                {"  "}<span className="text-indigo-400">availableForHire</span>: <span className="text-amber-400 font-semibold">true</span>,{"\n"}
+                &#125;;
               </pre>
-              <div className="mt-4 flex flex-wrap gap-1.5 sm:gap-2">
-                {["Java", "Spring Boot", "React", "Node.js", "MongoDB"].map((t) => (
+              <div className="mt-4 pt-3 border-t border-[var(--glass-border)] flex flex-wrap gap-1.5 sm:gap-2">
+                {["Java", "Spring Boot", "React", "Node.js", "PostgreSQL", "Docker"].map((t) => (
                   <span
                     key={t}
-                    className="text-[10px] sm:text-xs px-2 sm:px-3 py-0.5 sm:py-1 rounded-full border border-[var(--glass-border)] bg-[var(--background)]/40"
+                    className="text-[10px] sm:text-xs px-2.5 py-1 rounded-lg border border-[var(--glass-border)] bg-gradient-to-r from-[var(--brand)]/10 to-[var(--brand-2)]/10 font-mono font-medium text-foreground"
                   >
                     {t}
                   </span>

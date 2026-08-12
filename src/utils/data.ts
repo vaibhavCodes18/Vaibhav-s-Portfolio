@@ -10,7 +10,7 @@ export const NAV_LINKS = [
 export const SKILLS = [
   {
     category: "Languages",
-    color: "from-indigo-600 to-violet-600",
+    color: "from-blue-600 via-indigo-600 to-violet-600",
     items: [
       { name: "C/C++", level: 90 },
       { name: "Java", level: 95 },
@@ -20,7 +20,7 @@ export const SKILLS = [
   },
   {
     category: "Frontend",
-    color: "from-indigo-500 to-purple-600",
+    color: "from-cyan-500 via-blue-600 to-indigo-600",
     items: [
       { name: "React.js", level: 90 },
       { name: "Tailwind CSS", level: 92 },
@@ -30,7 +30,7 @@ export const SKILLS = [
   },
   {
     category: "MERN Stack",
-    color: "from-violet-600 to-fuchsia-600",
+    color: "from-violet-600 via-purple-600 to-pink-600",
     items: [
       { name: "Node.js", level: 85 },
       { name: "Express.js", level: 84 },
@@ -40,7 +40,7 @@ export const SKILLS = [
   },
   {
     category: "Backend (Java)",
-    color: "from-indigo-700 to-violet-700",
+    color: "from-indigo-600 via-violet-600 to-purple-700",
     items: [
       { name: "Core Java & OOP", level: 92 },
       { name: "Spring & Spring Boot", level: 90 },
@@ -54,7 +54,7 @@ export const SKILLS = [
   },
   {
     category: "Database",
-    color: "from-purple-600 to-indigo-600",
+    color: "from-emerald-500 via-teal-600 to-cyan-600",
     items: [
       { name: "MySQL", level: 90 },
       { name: "MongoDB", level: 88 },
@@ -64,7 +64,7 @@ export const SKILLS = [
   },
   {
     category: "Cloud & DevOps",
-    color: "from-violet-700 to-indigo-600",
+    color: "from-amber-500 via-orange-600 to-rose-600",
     items: [
       { name: "Linux", level: 86 },
       { name: "Git & GitHub", level: 94 },
